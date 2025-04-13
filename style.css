@@ -1,44 +1,46 @@
 body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #333;
 }
 
-input {
-  padding: 8px;
-  width: 200px;
+#taskInput {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 button {
-  padding: 8px 12px;
-  margin-left: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  padding: 10px;
   cursor: pointer;
 }
 
 ul {
-  margin-top: 20px;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
 li {
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 5px;
   display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 li.done {
   text-decoration: line-through;
   color: gray;
+}
+
+button {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
