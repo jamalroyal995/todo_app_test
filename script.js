@@ -38,3 +38,7 @@ function addTask() {
 
   const span = document.createElement('span');
   span.textContent = taskText;
+function clearAll() {
+  document.getElementById('taskList').innerHTML = '';
+  localStorage.removeItem('tasks');
+}
