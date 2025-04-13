@@ -24,6 +24,7 @@ function restoreListeners() {
     delBtn.onclick = () => {
       li.remove();
       saveTasks();
+      updateTaskCount();
     };
   });
 }
@@ -49,6 +50,7 @@ function addTask() {
   delBtn.onclick = () => {
     li.remove();
     saveTasks();
+    updateTaskCount();
   };
 
   li.appendChild(span);
@@ -57,10 +59,18 @@ function addTask() {
 
   taskInput.value = '';
   saveTasks();
+  updateTaskCount();
 }
 
 function clearAll() {
   document.getElementById('taskList').innerHTML = '';
   localStorage.removeItem('tasks');
+  updateTaskCount();
 }
+
+function updateTaskCount() {
+  const count = document.querySelectorAll('#taskList li').length;
+  document.getElementById('taskCount').textContent = `${count} task${count !== 1 ? 's' : ''} remaining`;
+}
+
 window.onload = loadTasks;
