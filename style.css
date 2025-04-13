@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
